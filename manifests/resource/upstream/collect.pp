@@ -3,8 +3,8 @@
 # This is separated into a separate class in order to remove errors if
 # storeconfigs are unavailable.
 
-class nginx::resource::upstream::collect (
-  $upstream_name,
+define nginx::resource::upstream::collect (
+  $upstream_name = $name,
 )
 {
   # Collect exported members:
